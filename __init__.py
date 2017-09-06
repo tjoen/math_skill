@@ -38,7 +38,7 @@ class MathematicsFallback(FallbackSkill):
         self.reload_skill = False
 
     def initialize(self):
-        self.register_fallback(self.handle_fallback, 0)
+        self.register_fallback(self.handle_fallback, 60)
 
     def handle_fallback(self, message):
         utterance = message.data.get("utterance")
